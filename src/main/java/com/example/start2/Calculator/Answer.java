@@ -8,7 +8,7 @@ import lombok.Data;
 public class Answer {
 
     private final String operation = "operation";
-    private String multiple = "";
+    private String getOperation = "";
     private final String total = "total";
     private int answer = 0;
 }
