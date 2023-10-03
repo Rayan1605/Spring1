@@ -13,7 +13,7 @@ public class calculate {
 
     @GetMapping("/calculate")
     public Answer Calculate(@RequestParam int num1, @RequestParam int num2, @RequestParam String operation) {
-     int answer;
+     int answer = 0;
         switch (operation){
             case "add":
                 answer = cal.Add(num1,num2);
@@ -28,9 +28,9 @@ public class calculate {
                 answer = cal.Divide(num1,num2);
                 break;
             default:
-
-
+                break;
         }
+        return answer(operation,answer);
 
     }
 
