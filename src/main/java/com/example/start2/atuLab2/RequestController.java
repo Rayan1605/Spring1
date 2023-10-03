@@ -15,15 +15,12 @@ public class RequestController {
 
     @GetMapping("/Hello/{name}")
         public String HelloUser(@PathVariable String name){
-
         return "Hello " + name;
+    }
 
-        }
-
- @GetMapping("/details")
-    public String details(@RequestParam String name, @RequestParam int age ){
-
-        return "Hello " + name + ", you are " + age + " years old";
- }
+     @GetMapping("/details")
+        public String details(@RequestParam String name, @RequestParam int age ){
+            return "Hello " + name + ", you are " + age + " years old.";
+     }
 
 }
