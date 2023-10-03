@@ -1,4 +1,4 @@
-package com.example.start2.atuLab2;
+package com.example.start2.Calculator;
 
 import com.example.start2.Calculator.Answer;
 import com.example.start2.Calculator.CalculateInterface;
@@ -17,28 +17,16 @@ public class calculate {
     @GetMapping("/calculate/{num1}/{num2}/{operation}")
     public Answer Calculate(@PathVariable int num1, @PathVariable int num2, @PathVariable String operation) {
      int answer = 0;
-        switch (operation){
-            case "add":
-                answer = cal.Add(num1,num2);
-                break;
-            case "subtract":
-                answer = cal.Minus(num1,num2);
-                break;
-            case "multiply":
-                answer = cal.multiply(num1,num2);
-                break;
-            case "divide":
-                answer = cal.Divide(num1,num2);
-                break;
-            default:
-                break;
+        switch (operation) {
+            case "add" -> answer = cal.Add(num1, num2);
+            case "subtract" -> answer = cal.Minus(num1, num2);
+            case "multiply" -> answer = cal.multiply(num1, num2);
+            case "divide" -> answer = cal.Divide(num1, num2);
+            default -> {
+            }
         }
-          return answer(operation,answer);
+          return new Answer(operation,answer);
 
-    }
-
-    private Answer answer(String operation, int answer) {
-     return new Answer(operation,answer);
     }
 
 }
