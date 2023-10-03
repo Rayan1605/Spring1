@@ -1,8 +1,10 @@
 package com.example.start2.Calculator;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@Data
+
+@AllArgsConstructor
 public class Answer {
 
     private final String operation = "operation";
