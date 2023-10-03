@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @AllArgsConstructor
 public class calculate {
-    CalculateInterface cal;
+    Service cal;
 
     @GetMapping("/calculate/{num1}/{num2}/{operation}")
     public Answer Calculate(@PathVariable int num1, @PathVariable int num2, @PathVariable String operation) {
