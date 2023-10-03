@@ -23,7 +23,7 @@ public class RequestController {
  @GetMapping("/details")
     public String details(@RequestParam String name, @RequestParam int age ){
 
-        return "Hello " + name + ", you are " + age + " old";
+        return "Hello " + name + ", you are " + age + " years old";
  }
 
 }
