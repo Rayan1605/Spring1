@@ -11,7 +11,7 @@ public class calculate {
 CalculateInterface cal;
 
 @GetMapping("/calculate")
-    public int Calculate(@RequestParam)
+    public int Calculate(@RequestParam int num1,@RequestParam int num2,@RequestParam String operation)
 
 
 }
