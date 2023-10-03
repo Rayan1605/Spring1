@@ -38,7 +38,6 @@ public class calculate {
 
     private Answer answer(String operation, int answer) {
      return new Answer(operation,answer);
-
     }
 
 }
