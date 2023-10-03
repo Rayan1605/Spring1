@@ -1,5 +1,7 @@
-package com.example.start2.Calculator;
+package com.example.start2.atuLab2;
 
+import com.example.start2.Calculator.Answer;
+import com.example.start2.Calculator.CalculateInterface;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -30,7 +32,7 @@ public class calculate {
             default:
                 break;
         }
-        return answer(operation,answer);
+          return answer(operation,answer);
 
     }
 
