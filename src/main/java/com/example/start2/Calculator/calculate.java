@@ -35,7 +35,7 @@ public class calculate {
     }
 
     private Answer answer(String operation, int answer) {
-        Answer answer1 = new Answer();
+     return new Answer(operation,answer);
 
     }
 
